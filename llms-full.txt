@@ -1,0 +1,156 @@
+# UniFlow — full product facts
+
+UniFlow is a shared workspace for team conversations and follow-through. It keeps channels, reviewed decisions, ideas, tasks, goals and leads in one environment, so the next step stays connected to the discussion behind it.
+
+Positioning: Work with the context behind the task.
+Descriptor: AI Communication & Collaboration
+Stage: Available for guided evaluation
+
+## Mandatory availability statement
+Available for guided evaluation. Some AI and advanced workspace screens use sample behaviour; external AI providers need configuration. A demo is not proof of production readiness.
+
+## Who it is for
+- Business owners running several projects
+- Project leads handling handovers
+- Growing teams whose ideas get lost in chat
+
+## How it works (four stages)
+1. Discuss — Keep project messages in channels.
+2. Review — Accept or reject proposed decisions and ideas.
+3. Assign — Give a task an owner, status and priority.
+4. Revisit — Return to stored context when the question comes back.
+
+## What makes it different
+- Conversation → reviewed record → task continuity in one environment
+- Explicit accept or reject review — proposals are never committed automatically
+- Shared provenance: records keep their relationships to the conversation behind them
+
+## Architecture
+Layers: People and roles → Channels and work records → Review and task services → Stored events and relationships.
+Boundary: Optional external AI providers are configured and policy-gated; device push delivery remains unfinished.
+
+## Capability status (from the repository review)
+- Registration and session lifecycle [Implemented]: Sign-up and sign-in sessions
+- Organisation and member administration [Partial]: Workspace members and roles
+- Project workspace [Implemented]: Projects as the frame for work
+- Channels and memberships [Implemented]: Channels for a project or shared topic
+- Messages and threaded context [Implemented]: Stored message history and threaded replies
+- Presence and live events [Implemented]: Live collaboration events and presence
+- Meeting lifecycle [Partial]: Meeting records and lifecycle actions; live video or audio not verified
+- Conversation wrapping and extraction [Partial]: Can propose decisions and ideas; the default uses a sample AI provider
+- Review decisions [Implemented]: Accept or reject proposed decisions
+- Idea capture and task promotion [Implemented]: Keep ideas; promote useful ones into tasks
+- Task lifecycle [Implemented]: Task owner, status and priority
+- Goals, objectives and milestones [Implemented]: Goal hierarchy and milestone progress
+- Lead pipeline [Implemented]: Record leads and change their stage
+- Knowledge graph [Backend only]: Relationships are stored; the visual graph uses hand-authored sample nodes
+- Semantic retrieval and ask [Partial]: Search and ask need evaluation with configured providers
+- Model routing and privacy policy [Implemented]: Provider routing and privacy rules for optional external AI
+- Default model provider [Sample behaviour]: The demo AI is a deterministic sample provider
+- In-app inbox [Implemented]: In-app notification inbox
+- Device push [Not ready]: Push to phones is not ready
+- Cockpit and event metrics [Implemented]: A cockpit view of event metrics
+- Transactional outbox [Implemented]: Reliable internal event delivery (technical)
+- Brainstorm, debate and simulator [Concept screen]: Concept screens
+- Agent, prompt and automation administration [Concept screen]: Concept screens
+- Mobile client and web mobile showcase [Partial]: Mobile direction, partial
+- Revenue concept screen [Sample data]: No forecast or sales improvement promised
+
+Status meanings: "Implemented" means the path exists in the reviewed product; it is not a claim of production scale.
+
+## Evidence
+A local 12-stage core-loop exercise covered the areas below. It used deterministic sample AI. It validates a local path — not real-model quality, production scale, customer results or independent certification.
+Areas covered: Messages, Extraction-shaped output, Persisted insights, Relationships, Retrieval, Notifications, Cockpit results.
+
+## Pricing
+No public price. A written scope and price is provided on request before any purchase decision.
+
+## Leadership
+- Divya Prakash Jha, CEO
+- Vaibhav Jain, COO
+- Zeeshan Khan, CMO
+
+## Not known / not published
+- Legal business identity
+- Contact email, telephone and address
+- Hosting region and data processors
+- Customers, testimonials, certifications
+
+## Claims UniFlow does not make
+- A fully autonomous company operating system
+- Replacing every tool your team uses
+- Production-proven AI accuracy
+- Live push notifications to phones
+- A verified live knowledge-map dashboard
+- Customer counts, testimonials, logos, certifications, uptime, response times, prices or launch dates
+
+## Frequently asked questions
+Q: Is this another team chat app?
+A: Team chat is one part of it. The product also holds reviewed decisions, ideas, tasks, goals and leads. Its main value is keeping discussion and follow-through close together.
+
+Q: Can we replace every tool with UniFlow?
+A: That has not been established. Start with one workflow and check the features, integrations and access controls your team needs.
+
+Q: Can we use it for meetings?
+A: Meeting records and lifecycle actions exist. Live meeting media has not been verified.
+
+Q: Will reminders arrive on our phones?
+A: The in-app notification inbox is implemented. External device push delivery is not ready in the reviewed source.
+
+Q: Does AI automatically make decisions for us?
+A: No. Proposed insights need review. The default evaluation uses sample AI output; a real provider must be configured and checked separately.
+
+Q: Can we use our own AI provider?
+A: Provider routing and privacy rules exist. Availability and quality depend on configuration and separate validation.
+
+Q: Is the knowledge graph live?
+A: The backend stores relationships. The current visual graph screen uses hand-authored sample nodes and should be shown as a concept preview.
+
+Q: What should we test first?
+A: Use a single project: create a channel, discuss a topic, review a decision and create a task. Check that the team can find the context again.
+
+Q: Is there a public price?
+A: No public price is listed. Ask for a written scope and price for your requirements before making a purchase decision.
+
+Q: Is UniFlow ready for production use?
+A: UniFlow is available for guided evaluation. Some AI and advanced workspace screens use sample behaviour; external AI providers need configuration. A demo is not proof of production readiness.
+
+Q: What should we bring to a walkthrough?
+A: One anonymised example of the work, the people who handle it and the result you need. Avoid passwords, account keys, private customer records or employee details.
+
+## Pages
+- Home: https://uniflow.si/
+- Product overview: https://uniflow.si/product
+- Team conversations: https://uniflow.si/product/conversations
+- Decisions and tasks: https://uniflow.si/product/decisions-and-tasks
+- Goals and leads: https://uniflow.si/product/goals-and-leads
+- Connected knowledge: https://uniflow.si/product/knowledge
+- Who it helps: https://uniflow.si/who-it-helps
+- For business owners: https://uniflow.si/who-it-helps/business-owners
+- For project leads: https://uniflow.si/who-it-helps/project-leads
+- For growing teams: https://uniflow.si/who-it-helps/growing-teams
+- How it works: https://uniflow.si/how-it-works
+- Trust & availability: https://uniflow.si/trust
+- Evaluation: https://uniflow.si/evaluation
+- Walkthrough: https://uniflow.si/walkthrough
+- Brochure: https://uniflow.si/brochure
+- Insights: https://uniflow.si/insights
+- FAQs: https://uniflow.si/faqs
+- About: https://uniflow.si/about
+- Contact: https://uniflow.si/contact
+- Facts for AI assistants: https://uniflow.si/ai
+
+## Articles
+- Chat plus a task list, or one connected workspace? A fair comparison: https://uniflow.si/insights/chat-plus-task-list-vs-connected-workspace — Team chat vs task management, notes or AI summaries: a fair look at four ways teams keep work moving, who each one may fit, and when to change nothing.
+- From conversation to owned task: the four-stage workflow: https://uniflow.si/insights/conversation-to-task-workflow — A conversation to task workflow in four stages: discuss, review, assign and revisit. How UniFlow carries a team discussion to an owned, trackable task.
+- How to run a guided evaluation of a team workspace before you commit: https://uniflow.si/insights/how-to-evaluate-a-team-workspace — A practical checklist to evaluate team collaboration software: separate sample, configured and unfinished behaviour, and get setup and costs in writing.
+- A handover should not need five people to explain the last decision: https://uniflow.si/insights/project-handover-context — A practical project handover checklist for leads: what to record, which decisions to confirm and how to pass on the context behind open tasks and goals.
+- Why AI-proposed decisions should be reviewed, not auto-committed: https://uniflow.si/insights/review-before-commit — An AI meeting decisions review step keeps people in charge. Why UniFlow asks teams to accept or reject proposed decisions before they become work.
+- Running several projects at once: get back into the conversation without restarting it: https://uniflow.si/insights/several-projects-one-conversation — Owners who manage multiple projects in a small business lose time re-asking old questions. Here is how to get back into a project without restarting it.
+- The team discussed it. Where did the decision go?: https://uniflow.si/insights/where-did-the-decision-go — Lost decisions in team chat cost more than time. See why agreed points slip away and how a reviewed decision record keeps the why next to the work.
+- Good ideas disappear when the chat moves on: https://uniflow.si/insights/where-good-ideas-go — A practical guide for growing teams to capture team ideas from chat, review them calmly, promote the useful ones into tasks and keep goals in view.
+- Why our website tells you what is not ready yet: https://uniflow.si/insights/why-we-show-what-is-not-ready — Why UniFlow labels what is sample, partial or not ready, and a calm guide to evaluating AI software claims before you trust a demo or a product page.
+
+## Next step
+Request a guided evaluation: https://uniflow.si/contact
+Brochure (PDF, 14 pages): https://uniflow.si/brochure/UniFlow-Brochure-Guided-Evaluation-Oct-2026.pdf

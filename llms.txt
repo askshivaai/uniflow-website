@@ -1,0 +1,41 @@
+# UniFlow
+
+> UniFlow is a shared workspace for team conversations and follow-through. It keeps channels, reviewed decisions, ideas, tasks, goals and leads in one environment, so the next step stays connected to the discussion behind it.
+
+Status: Available for guided evaluation. Some AI and advanced workspace screens use sample behaviour; external AI providers need configuration. A demo is not proof of production readiness.
+
+Pricing: No public price. A written scope and price is provided on request before any purchase decision.
+
+## Key pages
+- [Home](https://uniflow.si/): What UniFlow is and the discussion-to-task journey
+- [Product overview](https://uniflow.si/product): The six working records and the four-stage path
+- [Team conversations](https://uniflow.si/product/conversations): Create channels, keep message history and follow replies without moving the conversation into a separate document.
+- [Decisions and tasks](https://uniflow.si/product/decisions-and-tasks): Review decisions, keep ideas and track the work that follows.
+- [Goals and leads](https://uniflow.si/product/goals-and-leads): Maintain objectives and milestones, alongside a straightforward lead pipeline.
+- [Connected knowledge](https://uniflow.si/product/knowledge): Evaluate retrieval across connected records and the relationships between them.
+- [Who it helps](https://uniflow.si/who-it-helps): Choose the situation closest to yours
+- [For business owners](https://uniflow.si/who-it-helps/business-owners): When several projects are moving at once, the hard part is often remembering what was agreed and what still needs an owner.
+- [For project leads](https://uniflow.si/who-it-helps/project-leads): A new owner should not need five different people to explain the last decision.
+- [For growing teams](https://uniflow.si/who-it-helps/growing-teams): Good suggestions disappear when the chat moves on.
+- [How it works](https://uniflow.si/how-it-works): Four steps and what to check in each
+- [Trust & availability](https://uniflow.si/trust): Capability status, evidence, architecture and limits
+- [Evaluation](https://uniflow.si/evaluation): How an evaluation is scoped; no public price
+- [Walkthrough](https://uniflow.si/walkthrough): Four-chapter product walkthrough
+- [Brochure](https://uniflow.si/brochure): 14-page brochure preview and PDF download
+- [Insights](https://uniflow.si/insights): Articles on decisions, handovers and follow-through
+- [FAQs](https://uniflow.si/faqs): Questions worth asking before you decide
+- [About](https://uniflow.si/about): The problem and the product point of view
+- [Contact](https://uniflow.si/contact): Request a guided evaluation
+- [Facts for AI assistants](https://uniflow.si/ai): Canonical product facts in plain language
+
+## Machine-readable
+- [Full product facts (text)](https://uniflow.si/llms-full.txt)
+- [Product facts (JSON)](https://uniflow.si/product-facts.json)
+
+## Do not state
+- A fully autonomous company operating system
+- Replacing every tool your team uses
+- Production-proven AI accuracy
+- Live push notifications to phones
+- A verified live knowledge-map dashboard
+- Customer counts, testimonials, logos, certifications, uptime, response times, prices or launch dates
