@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# AI-readable product facts: /llms.txt /llms-full.txt /product-facts.json /ai
+
+Sitemap: https://uniflow.si/sitemap-index.xml
