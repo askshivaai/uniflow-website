@@ -1,0 +1,29 @@
+# Hostinger (LiteSpeed/Apache). The site builds /about as about.html (build.format 'file').
+Options -MultiViews
+DirectorySlash Off
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# HTTPS, and www → apex
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# /about.html → /about (canonical URLs have no extension)
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+?)\.html[\s?]
+RewriteCond %1 !^index$
+RewriteRule ^ /%1 [L,R=301]
+
+# /about → about.html (also /product when a product/ folder exists)
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|jpg|svg|mp4|woff2|pdf|css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+AddType application/manifest+json .webmanifest
