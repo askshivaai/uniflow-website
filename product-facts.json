@@ -1,0 +1,422 @@
+{
+  "name": "UniFlow",
+  "descriptor": "AI Communication & Collaboration",
+  "summary": "UniFlow is a shared workspace for team conversations and follow-through. It keeps channels, reviewed decisions, ideas, tasks, goals and leads in one environment, so the next step stays connected to the discussion behind it.",
+  "positioning": "Work with the context behind the task.",
+  "stage": "Available for guided evaluation",
+  "disclosure": "Available for guided evaluation. Some AI and advanced workspace screens use sample behaviour; external AI providers need configuration. A demo is not proof of production readiness.",
+  "audience": [
+    "Business owners running several projects",
+    "Project leads handling handovers",
+    "Growing teams whose ideas get lost in chat"
+  ],
+  "workflow": [
+    {
+      "stage": "Discuss",
+      "description": "Keep project messages in channels."
+    },
+    {
+      "stage": "Review",
+      "description": "Accept or reject proposed decisions and ideas."
+    },
+    {
+      "stage": "Assign",
+      "description": "Give a task an owner, status and priority."
+    },
+    {
+      "stage": "Revisit",
+      "description": "Return to stored context when the question comes back."
+    }
+  ],
+  "differentiators": [
+    "Conversation → reviewed record → task continuity in one environment",
+    "Explicit accept or reject review — proposals are never committed automatically",
+    "Shared provenance: records keep their relationships to the conversation behind them"
+  ],
+  "architecture": {
+    "layers": [
+      "People and roles",
+      "Channels and work records",
+      "Review and task services",
+      "Stored events and relationships"
+    ],
+    "boundary": "Optional external AI providers are configured and policy-gated; device push delivery remains unfinished."
+  },
+  "evidence": {
+    "summary": "A local 12-stage core-loop exercise covered the areas below. It used deterministic sample AI. It validates a local path — not real-model quality, production scale, customer results or independent certification.",
+    "areas": [
+      "Messages",
+      "Extraction-shaped output",
+      "Persisted insights",
+      "Relationships",
+      "Retrieval",
+      "Notifications",
+      "Cockpit results"
+    ]
+  },
+  "capabilities": [
+    {
+      "area": "Workspace",
+      "capability": "Registration and session lifecycle",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Sign-up and sign-in sessions"
+    },
+    {
+      "area": "Workspace",
+      "capability": "Organisation and member administration",
+      "status": "Partial",
+      "reviewStatus": "PARTIAL",
+      "meaning": "Workspace members and roles"
+    },
+    {
+      "area": "Workspace",
+      "capability": "Project workspace",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Projects as the frame for work"
+    },
+    {
+      "area": "Conversations",
+      "capability": "Channels and memberships",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Channels for a project or shared topic"
+    },
+    {
+      "area": "Conversations",
+      "capability": "Messages and threaded context",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Stored message history and threaded replies"
+    },
+    {
+      "area": "Conversations",
+      "capability": "Presence and live events",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Live collaboration events and presence"
+    },
+    {
+      "area": "Conversations",
+      "capability": "Meeting lifecycle",
+      "status": "Partial",
+      "reviewStatus": "PARTIAL",
+      "meaning": "Meeting records and lifecycle actions; live video or audio not verified"
+    },
+    {
+      "area": "Review",
+      "capability": "Conversation wrapping and extraction",
+      "status": "Partial",
+      "reviewStatus": "PARTIAL",
+      "meaning": "Can propose decisions and ideas; the default uses a sample AI provider"
+    },
+    {
+      "area": "Review",
+      "capability": "Review decisions",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Accept or reject proposed decisions"
+    },
+    {
+      "area": "Review",
+      "capability": "Idea capture and task promotion",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Keep ideas; promote useful ones into tasks"
+    },
+    {
+      "area": "Work",
+      "capability": "Task lifecycle",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Task owner, status and priority"
+    },
+    {
+      "area": "Work",
+      "capability": "Goals, objectives and milestones",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Goal hierarchy and milestone progress"
+    },
+    {
+      "area": "Work",
+      "capability": "Lead pipeline",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Record leads and change their stage"
+    },
+    {
+      "area": "Knowledge",
+      "capability": "Knowledge graph",
+      "status": "Backend only",
+      "reviewStatus": "BACKEND ONLY",
+      "meaning": "Relationships are stored; the visual graph uses hand-authored sample nodes"
+    },
+    {
+      "area": "Knowledge",
+      "capability": "Semantic retrieval and ask",
+      "status": "Partial",
+      "reviewStatus": "PARTIAL",
+      "meaning": "Search and ask need evaluation with configured providers"
+    },
+    {
+      "area": "AI",
+      "capability": "Model routing and privacy policy",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Provider routing and privacy rules for optional external AI"
+    },
+    {
+      "area": "AI",
+      "capability": "Default model provider",
+      "status": "Sample behaviour",
+      "reviewStatus": "MOCKED",
+      "meaning": "The demo AI is a deterministic sample provider"
+    },
+    {
+      "area": "Notifications",
+      "capability": "In-app inbox",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "In-app notification inbox"
+    },
+    {
+      "area": "Notifications",
+      "capability": "Device push",
+      "status": "Not ready",
+      "reviewStatus": "STUBBED",
+      "meaning": "Push to phones is not ready"
+    },
+    {
+      "area": "Platform",
+      "capability": "Cockpit and event metrics",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "A cockpit view of event metrics"
+    },
+    {
+      "area": "Platform",
+      "capability": "Transactional outbox",
+      "status": "Implemented",
+      "reviewStatus": "IMPLEMENTED",
+      "meaning": "Reliable internal event delivery (technical)"
+    },
+    {
+      "area": "Concepts",
+      "capability": "Brainstorm, debate and simulator",
+      "status": "Concept screen",
+      "reviewStatus": "UI ONLY",
+      "meaning": "Concept screens"
+    },
+    {
+      "area": "Concepts",
+      "capability": "Agent, prompt and automation administration",
+      "status": "Concept screen",
+      "reviewStatus": "UI ONLY",
+      "meaning": "Concept screens"
+    },
+    {
+      "area": "Concepts",
+      "capability": "Mobile client and web mobile showcase",
+      "status": "Partial",
+      "reviewStatus": "PARTIAL",
+      "meaning": "Mobile direction, partial"
+    },
+    {
+      "area": "Concepts",
+      "capability": "Revenue concept screen",
+      "status": "Sample data",
+      "reviewStatus": "SAMPLE DATA",
+      "meaning": "No forecast or sales improvement promised"
+    }
+  ],
+  "pricing": "No public price. A written scope and price is provided on request before any purchase decision.",
+  "notClaimed": [
+    "A fully autonomous company operating system",
+    "Replacing every tool your team uses",
+    "Production-proven AI accuracy",
+    "Live push notifications to phones",
+    "A verified live knowledge-map dashboard",
+    "Customer counts, testimonials, logos, certifications, uptime, response times, prices or launch dates"
+  ],
+  "leadership": [
+    {
+      "name": "Divya Prakash Jha",
+      "role": "CEO"
+    },
+    {
+      "name": "Vaibhav Jain",
+      "role": "COO"
+    },
+    {
+      "name": "Zeeshan Khan",
+      "role": "CMO"
+    }
+  ],
+  "unknown": [
+    "Legal business identity",
+    "Contact email, telephone and address",
+    "Hosting region and data processors",
+    "Customers, testimonials, certifications"
+  ],
+  "primaryAction": {
+    "label": "Request a guided evaluation",
+    "url": "/contact"
+  },
+  "brochure": {
+    "url": "/brochure/UniFlow-Brochure-Guided-Evaluation-Oct-2026.pdf",
+    "pages": 14,
+    "edition": "Digital edition · October 2026"
+  },
+  "faqs": [
+    {
+      "question": "Is this another team chat app?",
+      "answer": "Team chat is one part of it. The product also holds reviewed decisions, ideas, tasks, goals and leads. Its main value is keeping discussion and follow-through close together."
+    },
+    {
+      "question": "Can we replace every tool with UniFlow?",
+      "answer": "That has not been established. Start with one workflow and check the features, integrations and access controls your team needs."
+    },
+    {
+      "question": "Can we use it for meetings?",
+      "answer": "Meeting records and lifecycle actions exist. Live meeting media has not been verified."
+    },
+    {
+      "question": "Will reminders arrive on our phones?",
+      "answer": "The in-app notification inbox is implemented. External device push delivery is not ready in the reviewed source."
+    },
+    {
+      "question": "Does AI automatically make decisions for us?",
+      "answer": "No. Proposed insights need review. The default evaluation uses sample AI output; a real provider must be configured and checked separately."
+    },
+    {
+      "question": "Can we use our own AI provider?",
+      "answer": "Provider routing and privacy rules exist. Availability and quality depend on configuration and separate validation."
+    },
+    {
+      "question": "Is the knowledge graph live?",
+      "answer": "The backend stores relationships. The current visual graph screen uses hand-authored sample nodes and should be shown as a concept preview."
+    },
+    {
+      "question": "What should we test first?",
+      "answer": "Use a single project: create a channel, discuss a topic, review a decision and create a task. Check that the team can find the context again."
+    },
+    {
+      "question": "Is there a public price?",
+      "answer": "No public price is listed. Ask for a written scope and price for your requirements before making a purchase decision."
+    },
+    {
+      "question": "Is UniFlow ready for production use?",
+      "answer": "UniFlow is available for guided evaluation. Some AI and advanced workspace screens use sample behaviour; external AI providers need configuration. A demo is not proof of production readiness."
+    },
+    {
+      "question": "What should we bring to a walkthrough?",
+      "answer": "One anonymised example of the work, the people who handle it and the result you need. Avoid passwords, account keys, private customer records or employee details."
+    }
+  ],
+  "url": "https://uniflow.si/",
+  "pages": [
+    {
+      "url": "https://uniflow.si/",
+      "title": "Home",
+      "about": "What UniFlow is and the discussion-to-task journey"
+    },
+    {
+      "url": "https://uniflow.si/product",
+      "title": "Product overview",
+      "about": "The six working records and the four-stage path"
+    },
+    {
+      "url": "https://uniflow.si/product/conversations",
+      "title": "Team conversations",
+      "about": "Create channels, keep message history and follow replies without moving the conversation into a separate document."
+    },
+    {
+      "url": "https://uniflow.si/product/decisions-and-tasks",
+      "title": "Decisions and tasks",
+      "about": "Review decisions, keep ideas and track the work that follows."
+    },
+    {
+      "url": "https://uniflow.si/product/goals-and-leads",
+      "title": "Goals and leads",
+      "about": "Maintain objectives and milestones, alongside a straightforward lead pipeline."
+    },
+    {
+      "url": "https://uniflow.si/product/knowledge",
+      "title": "Connected knowledge",
+      "about": "Evaluate retrieval across connected records and the relationships between them."
+    },
+    {
+      "url": "https://uniflow.si/who-it-helps",
+      "title": "Who it helps",
+      "about": "Choose the situation closest to yours"
+    },
+    {
+      "url": "https://uniflow.si/who-it-helps/business-owners",
+      "title": "For business owners",
+      "about": "When several projects are moving at once, the hard part is often remembering what was agreed and what still needs an owner."
+    },
+    {
+      "url": "https://uniflow.si/who-it-helps/project-leads",
+      "title": "For project leads",
+      "about": "A new owner should not need five different people to explain the last decision."
+    },
+    {
+      "url": "https://uniflow.si/who-it-helps/growing-teams",
+      "title": "For growing teams",
+      "about": "Good suggestions disappear when the chat moves on."
+    },
+    {
+      "url": "https://uniflow.si/how-it-works",
+      "title": "How it works",
+      "about": "Four steps and what to check in each"
+    },
+    {
+      "url": "https://uniflow.si/trust",
+      "title": "Trust & availability",
+      "about": "Capability status, evidence, architecture and limits"
+    },
+    {
+      "url": "https://uniflow.si/evaluation",
+      "title": "Evaluation",
+      "about": "How an evaluation is scoped; no public price"
+    },
+    {
+      "url": "https://uniflow.si/walkthrough",
+      "title": "Walkthrough",
+      "about": "Four-chapter product walkthrough"
+    },
+    {
+      "url": "https://uniflow.si/brochure",
+      "title": "Brochure",
+      "about": "14-page brochure preview and PDF download"
+    },
+    {
+      "url": "https://uniflow.si/insights",
+      "title": "Insights",
+      "about": "Articles on decisions, handovers and follow-through"
+    },
+    {
+      "url": "https://uniflow.si/faqs",
+      "title": "FAQs",
+      "about": "Questions worth asking before you decide"
+    },
+    {
+      "url": "https://uniflow.si/about",
+      "title": "About",
+      "about": "The problem and the product point of view"
+    },
+    {
+      "url": "https://uniflow.si/contact",
+      "title": "Contact",
+      "about": "Request a guided evaluation"
+    },
+    {
+      "url": "https://uniflow.si/ai",
+      "title": "Facts for AI assistants",
+      "about": "Canonical product facts in plain language"
+    }
+  ],
+  "updated": "2026-10-10"
+}
